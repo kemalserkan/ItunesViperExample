@@ -3,17 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60BE5B7269E4775EF7744A2D /* Pods_ItunesViperExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95132D170E372564F1A79487 /* Pods_ItunesViperExampleTests.framework */; };
+		9332F2F95F9D1134C9211F8E /* Pods_ItunesViperExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7456B910B3F92CAF621151B1 /* Pods_ItunesViperExampleUITests.framework */; };
+		95EAEF759BC58DEC2608ADF6 /* Pods_ItunesViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F447CDE46516D8AB28B6D2B9 /* Pods_ItunesViperExample.framework */; };
 		A386470822CF33BE00E308CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386470722CF33BE00E308CF /* AppDelegate.swift */; };
-		A386470A22CF33BE00E308CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386470922CF33BE00E308CF /* ViewController.swift */; };
+		A386470A22CF33BE00E308CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386470922CF33BE00E308CF /* MainViewController.swift */; };
 		A386470D22CF33BE00E308CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A386470B22CF33BE00E308CF /* Main.storyboard */; };
 		A386470F22CF33BF00E308CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A386470E22CF33BF00E308CF /* Assets.xcassets */; };
 		A386471222CF33BF00E308CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A386471022CF33BF00E308CF /* LaunchScreen.storyboard */; };
 		A386471D22CF33BF00E308CF /* ItunesViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386471C22CF33BF00E308CF /* ItunesViperExampleTests.swift */; };
 		A386472822CF33BF00E308CF /* ItunesViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386472722CF33BF00E308CF /* ItunesViperExampleUITests.swift */; };
+		A386473722CF399200E308CF /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386473622CF399200E308CF /* BaseNavigation.swift */; };
+		A386473A22CF3A4D00E308CF /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386473922CF3A4D00E308CF /* AppRouter.swift */; };
+		A386473C22CF3A5C00E308CF /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386473B22CF3A5C00E308CF /* AppContainer.swift */; };
+		A386473F22CF3C6200E308CF /* MainViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A386473E22CF3C6200E308CF /* MainViewStoryboard.storyboard */; };
+		A386474122CF3F0900E308CF /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474022CF3F0900E308CF /* MainViewPresenter.swift */; };
+		A386474322CF40C500E308CF /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474222CF40C500E308CF /* MainViewInteractor.swift */; };
+		A386474522CF41A000E308CF /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474422CF41A000E308CF /* MainViewRouter.swift */; };
+		A386474722CF421D00E308CF /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474622CF421D00E308CF /* MainViewBuilder.swift */; };
+		A386474A22CF43EF00E308CF /* MainDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A386474922CF43EF00E308CF /* MainDetail.storyboard */; };
+		A386474C22CF443400E308CF /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474B22CF443400E308CF /* MainDetailViewController.swift */; };
+		A386474E22CF448700E308CF /* MainDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474D22CF448700E308CF /* MainDetailPresenter.swift */; };
+		A386475022CF452200E308CF /* MainDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474F22CF452200E308CF /* MainDetailBuilder.swift */; };
+		A386475522CF45CD00E308CF /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475422CF45CD00E308CF /* Media.swift */; };
+		A386475722CF45E400E308CF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475622CF45E400E308CF /* Search.swift */; };
+		A386475922CF476800E308CF /* ItuneServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475822CF476800E308CF /* ItuneServerAPI.swift */; };
+		A386475B22CF493B00E308CF /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475A22CF493B00E308CF /* ServiceProvider.swift */; };
+		A386475E22CF693700E308CF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475D22CF693700E308CF /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A66CCBB8883E77C6BF5CA49 /* Pods-ItunesViperExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ItunesViperExampleUITests/Pods-ItunesViperExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		294F75E37DCD696F4C26347E /* Pods-ItunesViperExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExample.debug.xcconfig"; path = "Target Support Files/Pods-ItunesViperExample/Pods-ItunesViperExample.debug.xcconfig"; sourceTree = "<group>"; };
+		65AFA249551913DFCB8F105F /* Pods-ItunesViperExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ItunesViperExampleTests/Pods-ItunesViperExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB909609B4223CFD5C1F572 /* Pods-ItunesViperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExample.release.xcconfig"; path = "Target Support Files/Pods-ItunesViperExample/Pods-ItunesViperExample.release.xcconfig"; sourceTree = "<group>"; };
+		7456B910B3F92CAF621151B1 /* Pods_ItunesViperExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesViperExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93978575B799852C5A7E974A /* Pods-ItunesViperExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ItunesViperExampleUITests/Pods-ItunesViperExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95132D170E372564F1A79487 /* Pods_ItunesViperExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesViperExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A386470422CF33BE00E308CF /* ItunesViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A386470722CF33BE00E308CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A386470922CF33BE00E308CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A386470922CF33BE00E308CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A386470C22CF33BE00E308CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A386470E22CF33BF00E308CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A386471122CF33BF00E308CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,25 @@
 		A386472322CF33BF00E308CF /* ItunesViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A386472722CF33BF00E308CF /* ItunesViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesViperExampleUITests.swift; sourceTree = "<group>"; };
 		A386472922CF33BF00E308CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A386473622CF399200E308CF /* BaseNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
+		A386473922CF3A4D00E308CF /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		A386473B22CF3A5C00E308CF /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		A386473E22CF3C6200E308CF /* MainViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewStoryboard.storyboard; sourceTree = "<group>"; };
+		A386474022CF3F0900E308CF /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		A386474222CF40C500E308CF /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		A386474422CF41A000E308CF /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
+		A386474622CF421D00E308CF /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		A386474922CF43EF00E308CF /* MainDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDetail.storyboard; sourceTree = "<group>"; };
+		A386474B22CF443400E308CF /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
+		A386474D22CF448700E308CF /* MainDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailPresenter.swift; sourceTree = "<group>"; };
+		A386474F22CF452200E308CF /* MainDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailBuilder.swift; sourceTree = "<group>"; };
+		A386475422CF45CD00E308CF /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		A386475622CF45E400E308CF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		A386475822CF476800E308CF /* ItuneServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneServerAPI.swift; sourceTree = "<group>"; };
+		A386475A22CF493B00E308CF /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		A386475D22CF693700E308CF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		BBB010DF88A10F7390771DD7 /* Pods-ItunesViperExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ItunesViperExampleTests/Pods-ItunesViperExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F447CDE46516D8AB28B6D2B9 /* Pods_ItunesViperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesViperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EAEF759BC58DEC2608ADF6 /* Pods_ItunesViperExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60BE5B7269E4775EF7744A2D /* Pods_ItunesViperExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9332F2F95F9D1134C9211F8E /* Pods_ItunesViperExampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078FF18C3D17C6730FD04DEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F447CDE46516D8AB28B6D2B9 /* Pods_ItunesViperExample.framework */,
+				95132D170E372564F1A79487 /* Pods_ItunesViperExampleTests.framework */,
+				7456B910B3F92CAF621151B1 /* Pods_ItunesViperExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CBF4926B0F547C53C098F38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				294F75E37DCD696F4C26347E /* Pods-ItunesViperExample.debug.xcconfig */,
+				6BB909609B4223CFD5C1F572 /* Pods-ItunesViperExample.release.xcconfig */,
+				65AFA249551913DFCB8F105F /* Pods-ItunesViperExampleTests.debug.xcconfig */,
+				BBB010DF88A10F7390771DD7 /* Pods-ItunesViperExampleTests.release.xcconfig */,
+				93978575B799852C5A7E974A /* Pods-ItunesViperExampleUITests.debug.xcconfig */,
+				1A66CCBB8883E77C6BF5CA49 /* Pods-ItunesViperExampleUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A38646FB22CF33BE00E308CF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +153,8 @@
 				A386471B22CF33BF00E308CF /* ItunesViperExampleTests */,
 				A386472622CF33BF00E308CF /* ItunesViperExampleUITests */,
 				A386470522CF33BE00E308CF /* Products */,
+				0CBF4926B0F547C53C098F38 /* Pods */,
+				078FF18C3D17C6730FD04DEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +171,11 @@
 		A386470622CF33BE00E308CF /* ItunesViperExample */ = {
 			isa = PBXGroup;
 			children = (
-				A386470722CF33BE00E308CF /* AppDelegate.swift */,
-				A386470922CF33BE00E308CF /* ViewController.swift */,
+				A386475122CF45B300E308CF /* Service */,
+				A386474822CF43D200E308CF /* MainDetail Modules */,
+				A386473D22CF3B0300E308CF /* MainView Modules */,
+				A386473822CF39D900E308CF /* Application Module */,
+				A386473522CF394500E308CF /* Base */,
 				A386470B22CF33BE00E308CF /* Main.storyboard */,
 				A386470E22CF33BF00E308CF /* Assets.xcassets */,
 				A386471022CF33BF00E308CF /* LaunchScreen.storyboard */,
@@ -125,6 +202,84 @@
 			path = ItunesViperExampleUITests;
 			sourceTree = "<group>";
 		};
+		A386473522CF394500E308CF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A386473622CF399200E308CF /* BaseNavigation.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A386473822CF39D900E308CF /* Application Module */ = {
+			isa = PBXGroup;
+			children = (
+				A386470722CF33BE00E308CF /* AppDelegate.swift */,
+				A386473922CF3A4D00E308CF /* AppRouter.swift */,
+				A386473B22CF3A5C00E308CF /* AppContainer.swift */,
+			);
+			path = "Application Module";
+			sourceTree = "<group>";
+		};
+		A386473D22CF3B0300E308CF /* MainView Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A386475C22CF692300E308CF /* CustomCell */,
+				A386473E22CF3C6200E308CF /* MainViewStoryboard.storyboard */,
+				A386470922CF33BE00E308CF /* MainViewController.swift */,
+				A386474022CF3F0900E308CF /* MainViewPresenter.swift */,
+				A386474222CF40C500E308CF /* MainViewInteractor.swift */,
+				A386474422CF41A000E308CF /* MainViewRouter.swift */,
+				A386474622CF421D00E308CF /* MainViewBuilder.swift */,
+			);
+			path = "MainView Modules";
+			sourceTree = "<group>";
+		};
+		A386474822CF43D200E308CF /* MainDetail Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A386474922CF43EF00E308CF /* MainDetail.storyboard */,
+				A386474B22CF443400E308CF /* MainDetailViewController.swift */,
+				A386474D22CF448700E308CF /* MainDetailPresenter.swift */,
+				A386474F22CF452200E308CF /* MainDetailBuilder.swift */,
+			);
+			path = "MainDetail Modules";
+			sourceTree = "<group>";
+		};
+		A386475122CF45B300E308CF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A386475322CF45BF00E308CF /* Network */,
+				A386475222CF45B900E308CF /* Models */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A386475222CF45B900E308CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A386475422CF45CD00E308CF /* Media.swift */,
+				A386475622CF45E400E308CF /* Search.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A386475322CF45BF00E308CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A386475822CF476800E308CF /* ItuneServerAPI.swift */,
+				A386475A22CF493B00E308CF /* ServiceProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A386475C22CF692300E308CF /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A386475D22CF693700E308CF /* MainTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A386472C22CF33BF00E308CF /* Build configuration list for PBXNativeTarget "ItunesViperExample" */;
 			buildPhases = (
+				48B713D45CDD2930668DD0EA /* [CP] Check Pods Manifest.lock */,
 				A386470022CF33BE00E308CF /* Sources */,
 				A386470122CF33BE00E308CF /* Frameworks */,
 				A386470222CF33BE00E308CF /* Resources */,
+				3B0BC65E14F2B3119A4056D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A386472F22CF33BF00E308CF /* Build configuration list for PBXNativeTarget "ItunesViperExampleTests" */;
 			buildPhases = (
+				85FD653901119392F8C74E84 /* [CP] Check Pods Manifest.lock */,
 				A386471422CF33BF00E308CF /* Sources */,
 				A386471522CF33BF00E308CF /* Frameworks */,
 				A386471622CF33BF00E308CF /* Resources */,
@@ -167,6 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A386473222CF33BF00E308CF /* Build configuration list for PBXNativeTarget "ItunesViperExampleUITests" */;
 			buildPhases = (
+				95A846EB7ECD464027E475CB /* [CP] Check Pods Manifest.lock */,
 				A386471F22CF33BF00E308CF /* Sources */,
 				A386472022CF33BF00E308CF /* Frameworks */,
 				A386472122CF33BF00E308CF /* Resources */,
@@ -230,6 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A386471222CF33BF00E308CF /* LaunchScreen.storyboard in Resources */,
+				A386474A22CF43EF00E308CF /* MainDetail.storyboard in Resources */,
+				A386473F22CF3C6200E308CF /* MainViewStoryboard.storyboard in Resources */,
 				A386470F22CF33BF00E308CF /* Assets.xcassets in Resources */,
 				A386470D22CF33BE00E308CF /* Main.storyboard in Resources */,
 			);
@@ -251,13 +412,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B0BC65E14F2B3119A4056D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItunesViperExample/Pods-ItunesViperExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItunesViperExample/Pods-ItunesViperExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ItunesViperExample/Pods-ItunesViperExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48B713D45CDD2930668DD0EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesViperExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85FD653901119392F8C74E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesViperExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A846EB7ECD464027E475CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesViperExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A386470022CF33BE00E308CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A386470A22CF33BE00E308CF /* ViewController.swift in Sources */,
+				A386474522CF41A000E308CF /* MainViewRouter.swift in Sources */,
+				A386473A22CF3A4D00E308CF /* AppRouter.swift in Sources */,
+				A386474722CF421D00E308CF /* MainViewBuilder.swift in Sources */,
+				A386473722CF399200E308CF /* BaseNavigation.swift in Sources */,
+				A386475922CF476800E308CF /* ItuneServerAPI.swift in Sources */,
+				A386474122CF3F0900E308CF /* MainViewPresenter.swift in Sources */,
+				A386475E22CF693700E308CF /* MainTableViewCell.swift in Sources */,
+				A386474E22CF448700E308CF /* MainDetailPresenter.swift in Sources */,
+				A386473C22CF3A5C00E308CF /* AppContainer.swift in Sources */,
+				A386474C22CF443400E308CF /* MainDetailViewController.swift in Sources */,
+				A386470A22CF33BE00E308CF /* MainViewController.swift in Sources */,
+				A386475022CF452200E308CF /* MainDetailBuilder.swift in Sources */,
+				A386475522CF45CD00E308CF /* Media.swift in Sources */,
+				A386475B22CF493B00E308CF /* ServiceProvider.swift in Sources */,
+				A386474322CF40C500E308CF /* MainViewInteractor.swift in Sources */,
 				A386470822CF33BE00E308CF /* AppDelegate.swift in Sources */,
+				A386475722CF45E400E308CF /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +692,11 @@
 		};
 		A386472D22CF33BF00E308CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294F75E37DCD696F4C26347E /* Pods-ItunesViperExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378RQ2BPXK;
 				INFOPLIST_FILE = ItunesViperExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +711,11 @@
 		};
 		A386472E22CF33BF00E308CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB909609B4223CFD5C1F572 /* Pods-ItunesViperExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378RQ2BPXK;
 				INFOPLIST_FILE = ItunesViperExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +730,7 @@
 		};
 		A386473022CF33BF00E308CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AFA249551913DFCB8F105F /* Pods-ItunesViperExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +751,7 @@
 		};
 		A386473122CF33BF00E308CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB010DF88A10F7390771DD7 /* Pods-ItunesViperExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +772,7 @@
 		};
 		A386473322CF33BF00E308CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93978575B799852C5A7E974A /* Pods-ItunesViperExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +792,7 @@
 		};
 		A386473422CF33BF00E308CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A66CCBB8883E77C6BF5CA49 /* Pods-ItunesViperExampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
