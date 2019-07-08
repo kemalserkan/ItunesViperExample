@@ -13,7 +13,7 @@ class MainDetailBuilder {
     static func make(media: Media) -> MainDetailViewController {
         let storyBoard = UIStoryboard(name: "MainDetail", bundle: nil)
         let view = storyBoard.instantiateViewController(withIdentifier: "MainDetailViewController") as! MainDetailViewController
-        let presenter = MainDetailPresenter(view: view as! MainDetailViewProtocol, media: media)
+        let presenter = MainDetailPresenter(view: view as MainDetailViewProtocol, media: media)
         
         view.presenter = presenter
         

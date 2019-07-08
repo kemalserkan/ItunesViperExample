@@ -1,5 +1,5 @@
 //
-//  ItuneServerAPI.swift
+//  ItunesServerAPI.swift
 //  ItunesViperExample
 //
 //  Created by Kemal Serkan YILDIRIM on 5.07.2019.

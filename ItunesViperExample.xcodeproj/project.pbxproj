@@ -31,7 +31,7 @@
 		A386475022CF452200E308CF /* MainDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386474F22CF452200E308CF /* MainDetailBuilder.swift */; };
 		A386475522CF45CD00E308CF /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475422CF45CD00E308CF /* Media.swift */; };
 		A386475722CF45E400E308CF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475622CF45E400E308CF /* Search.swift */; };
-		A386475922CF476800E308CF /* ItuneServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475822CF476800E308CF /* ItuneServerAPI.swift */; };
+		A386475922CF476800E308CF /* ItunesServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475822CF476800E308CF /* ItunesServerAPI.swift */; };
 		A386475B22CF493B00E308CF /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475A22CF493B00E308CF /* ServiceProvider.swift */; };
 		A386475E22CF693700E308CF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386475D22CF693700E308CF /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -88,7 +88,7 @@
 		A386474F22CF452200E308CF /* MainDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailBuilder.swift; sourceTree = "<group>"; };
 		A386475422CF45CD00E308CF /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		A386475622CF45E400E308CF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		A386475822CF476800E308CF /* ItuneServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneServerAPI.swift; sourceTree = "<group>"; };
+		A386475822CF476800E308CF /* ItunesServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesServerAPI.swift; sourceTree = "<group>"; };
 		A386475A22CF493B00E308CF /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		A386475D22CF693700E308CF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BBB010DF88A10F7390771DD7 /* Pods-ItunesViperExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViperExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ItunesViperExampleTests/Pods-ItunesViperExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 		A386475322CF45BF00E308CF /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A386475822CF476800E308CF /* ItuneServerAPI.swift */,
+				A386475822CF476800E308CF /* ItunesServerAPI.swift */,
 				A386475A22CF493B00E308CF /* ServiceProvider.swift */,
 			);
 			path = Network;
@@ -507,7 +507,7 @@
 				A386473A22CF3A4D00E308CF /* AppRouter.swift in Sources */,
 				A386474722CF421D00E308CF /* MainViewBuilder.swift in Sources */,
 				A386473722CF399200E308CF /* BaseNavigation.swift in Sources */,
-				A386475922CF476800E308CF /* ItuneServerAPI.swift in Sources */,
+				A386475922CF476800E308CF /* ItunesServerAPI.swift in Sources */,
 				A386474122CF3F0900E308CF /* MainViewPresenter.swift in Sources */,
 				A386475E22CF693700E308CF /* MainTableViewCell.swift in Sources */,
 				A386474E22CF448700E308CF /* MainDetailPresenter.swift in Sources */,
